@@ -1,0 +1,15 @@
+@mixin font($alias, $name, $weight, $style: normal) {
+  @font-face {
+    font-family: $alias;
+    src: url("~@/assets/fonts/" + $name + ".woff2") format("woff2"), url("~@/assets/fonts/" + $name + ".woff") format("woff"),
+      url("~@/assets/fonts/" + $name + ".ttf") format("truetype"), url("~@/assets/fonts/" + $name + ".eot"),
+      url("~@/assets/fonts/" + $name + ".eot?#iefix") format("embedded-opentype");
+    font-weight: $weight;
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+/* Назначаем шрифты для сайта */
+@include font('Gotham Pro', 'GothamPro', normal);
+@include font('Gotham Pro', 'GothamPro-Bold', bold);

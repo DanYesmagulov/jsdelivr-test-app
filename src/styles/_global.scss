@@ -1,0 +1,39 @@
+/*
+Глобальные правила для всего документа
+*/
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+
+  background: $bg-body;
+  margin: 0;
+  
+  @include mobile {
+    font-size: 14px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }  
+}
+
+/* Глобальная анимация при переходе на другую страницу */
+/* Раскомментировать и использовать :) */
+/*
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+*/
