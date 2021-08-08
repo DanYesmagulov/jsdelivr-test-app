@@ -1,6 +1,5 @@
 <template>
   <b-container>
-    <p>Hello World</p>
     <SearchInput />
     <PackagesTable />
   </b-container>

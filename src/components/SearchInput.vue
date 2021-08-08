@@ -1,6 +1,8 @@
 <template>
   <div>
     <b-form-input
+      style="margin-top: 40px;"
+      id="input-large"
       v-model="searchValue"
       placeholder="search all of npm"
       @keyup.enter="search(searchValue)"

@@ -28,8 +28,8 @@
           <p
             v-for="(word, id) in pkg.package.keywords"
             :key="id"
-            class="mr-3 border p-1"
-            style="margin-bottom: 10px;"
+            class="mr-2 border p-1"
+            style="margin-bottom: 10px; font-size: 10px"
           >
             {{ word }}
           </p>
